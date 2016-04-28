@@ -1,0 +1,8 @@
+---
+- include: dep_install.yml
+- include: ossec.yml
+# - include: fix.yml
+- include: elasticsearch.yml
+- include: kibana.yml
+- include: logstash.yml
+- include: restart.yml

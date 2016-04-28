@@ -1,0 +1,23 @@
+commands
+sudo ansible-playbook playbook_vagrant.yml -i hosts_vagrant -vv
+
+   40  sudo yum clean all
+   41  sudo yum upgrade
+   42  sudo aum -uf
+   43  grep -i error /var/ossec/logs/ossec.log
+   44  sudo grep -i error /var/ossec/logs/ossec.log
+   45  sudo /etc/init.d/ossec-hids restart
+   46  sudo yum remove ossec-hids
+   47  sudo yum install  ossec-hids
+   48  sudo yum install  ossec-hids-server
+   49  sudo /etc/init.d/ossec-hids restart
+   50* sudo /etc/init.d/ossec-hids-server rest
+   51  # service iptables save
+   52  # service iptables stop
+   53  # chkconfig iptables off
+   54   service iptables stop
+   55  sudo  service iptables stop
+   56  sudo chkconfig iptables off
+   57* sudo  restart
+   58  sudo /etc/init.d/elasticsearch  restart
+   59  sudo /etc/init.d/kibana  restart
