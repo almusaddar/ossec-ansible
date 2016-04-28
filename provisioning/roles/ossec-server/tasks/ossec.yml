@@ -27,28 +27,29 @@
   when: atomic_script.stat.exists
 
 
-- name: yum update -y
-  command: yum update -y
+# - name: yum update -y
+#   command: yum update -y
 
-- name: yum install ossec-hids ossec-hids-server -y
-  command: yum install ossec-hids ossec-hids-server -y
+# - name: yum install ossec-hids ossec-hids-server -y
+#   command: yum install ossec-hids ossec-hids-server -y
 
-- name: sudo yum remove ossec-hids -y
-  command: sudo yum remove ossec-hids -y
+# - name: sudo yum remove ossec-hids -y
+#   command: sudo yum remove ossec-hids -y
 
-- name: yum clean all
-  command: yum clean all
+# - name: yum clean all
+#   command: yum clean all
 
-- name: yum update -y
-  command: yum update -y
+# - name: yum update -y
+#   command: yum update -y
 
-- name: yum install ossec-hids ossec-hids-server -y
-  command: yum install ossec-hids ossec-hids-server -y
-# - name: Install ossec-server
-#   yum: name={{item}} update_cache=true state=latest 
-#   with_items:
-#       - ossec-hids
-#       - ossec-hids-server
+# - name: yum install ossec-hids ossec-hids-server -y
+#   command: yum install ossec-hids ossec-hids-server -y
+  
+- name: Install ossec-server
+  yum: name={{item}} update_cache=true state=latest 
+  with_items:
+      - ossec-hids
+      - ossec-hids-server
 
 - name: Add Ossec at startup
   shell: chkconfig ossec-hids on

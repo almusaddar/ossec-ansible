@@ -3,4 +3,4 @@
 - command: sudo /etc/init.d/elasticsearch  restart
 - command: sudo /etc/init.d/kibana  restart
 - command: sudo /etc/init.d/logstash  restart
-- command: sudo /etc/init.d/ossec-hids restart
+#- command: sudo /etc/init.d/ossec-hids restart
