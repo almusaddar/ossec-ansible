@@ -10,7 +10,7 @@ install:
   - echo -e '[defaults]\nroles_path = ../\nhostfile = ./tests/inventory' > ansible.cfg
 script:
   # Check the role/playbook's syntax.
-  - ansible-playbook --syntax-check test/test.yml
+  - ansible-playbook --syntax-check provisioning/test/test.yml
 
   # Run the role/playbook with ansible-playbook.
   # - ansible-playbook --sudo -v --diff tests/role.yml
