@@ -12,7 +12,7 @@ script:
   # Check the role/playbook's syntax.
   - ansible-playbook --syntax-check test/test.yml
 
-  # # Run the role/playbook with ansible-playbook.
+  # Run the role/playbook with ansible-playbook.
   # - ansible-playbook --sudo -v --diff tests/role.yml
 
   # # Run the role/playbook again, checking to make sure it's idempotent.
