@@ -1,5 +1,5 @@
 # ossec-ansible-vagrant-travis
-
+Vagrant Will deploy CentOS - Ubuntu - Windows 10, then Ansible Will install OSSEC Client on them.
 ## Run Playbook
 ```bash
 sudo ansible-playbook playbook_vagrant.yml -i hosts_vagrant -vv
